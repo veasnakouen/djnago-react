@@ -1,13 +1,16 @@
+"use client";
 import React from "react";
+
+//carousel
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+//slider card component
 import SliderCard from "./SliderCard";
+//resource array of slide
 import { DataArray } from "@/app/data";
 
 export default function MySlider() {
-
   var settings = {
     infinite: true,
     slidesToShow: 1,
@@ -153,12 +156,12 @@ export default function MySlider() {
   };
 
   return (
-    <Slider {...settings} >
+    <Slider {...settings}>
       {DataArray.map((item, index) => (
         <div key={index} className="my-slider">
           <SliderCard item={item} index={index} />
         </div>
       ))}
-</Slider>
+    </Slider>
   );
 }

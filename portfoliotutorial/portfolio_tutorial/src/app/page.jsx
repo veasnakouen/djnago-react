@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HomeComponent from "./components/HomeComponent/HomeComponent";
 import PdfViewer from "./components/Pdfviewer/Pdfviewer";
+import MySlider from "./components/SlideCard/MySlider";
 
 import { Hind } from "next/font/google";
 
@@ -45,9 +46,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-        {/* <div style={{ transform: "translate(0px,-230px)" }}>
+        <div style={{ transform: "translate(0px,-230px)" }}>
           <MySlider />
-        </div> */}
+        </div>
       </div>
       {/* <PdfViewer /> */}
     </main>

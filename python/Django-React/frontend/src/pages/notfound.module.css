@@ -1,0 +1,16 @@
+
+.notfound{
+    text-align: center;
+    margin: 50px auto;
+}
+.notfound h1{
+    color:orangered;
+    text-transform: uppercase;
+}
+.notfound p{
+    color:gray;
+    font-weight: thin;
+    font-style: italic;
+    font-size: 2em;
+    text-transform: capitalize;
+}
